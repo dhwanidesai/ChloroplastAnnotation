@@ -21,8 +21,16 @@ For example, if you are using QIIME in a virtual environment, you need to activa
 
 \*Note that the path to activate QIIME would be different on your computer depending on where QIIME is installed.
 
+### Script and Files
+No installation is required to use this helper script for chloroplast annotation. If you are using the Micorbiome Helper scripts, just make sure to put the script in a location which is included in the $PATH environment variable E.g /home/<username>/bin or /usr/local/bin. 
+  
+In any case, the permissions for the script need to be changed to make it executable
 
-No installation is required to use these helper scripts for chloroplast annotation. If you are using the Micorbiome Helper scripts, just make sure to put these scripts in a location which is included in the $PATH environment variable E.g /home/<username>/bin or /usr/local/bin. 
+<code> chmod u+x extract_sequences_for_OTU_ids.pl </code>
+
+And then,
+
+<code> cp extract_sequences_for_OTU_ids.pl /home/<username>/bin </code>
 
 The PhytoRef sequences Fasta, alignment and taxonomy files need to be copied to a databases folder (if existing). Wherever these files are stored, the path to these files will need to be specified while running the QIIME scripts.
 
