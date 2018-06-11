@@ -58,4 +58,4 @@ No installation is required to use these helper scripts for chloroplast annotati
 
 <code> pick_open_reference_otus.py -i OTUlist-extracted-reads/Chloroplast_OTU_IDs.txt.extracted.fasta -o Chlaroplast_clustering/ -p Chloroplast_clustering_params.txt -m sortmerna_sumaclust -s 0.1 -v --min_otu_size 1  </code>
   
-
+* This should result in an OTU file (in the biom format) containing OTUs picked using the PhytoRes picked. From this point on, you could use the scripts and steps mentioned in the 16S SOP to generate OTU relative abundance plots for the differnet samples, Alpha and Beta diversity plots etc. 
