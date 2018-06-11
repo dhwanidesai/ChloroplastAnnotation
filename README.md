@@ -53,5 +53,9 @@ No installation is required to use these helper scripts for chloroplast annotati
   Run the script as follows:
 
 <code> perl extract_sequences_for_OTU_ids.pl --lst OTUIDS_list.txt --mapfile clustering/final_otu_map_mc1.txt --seqfile combined_fasta/combined_seqs.fna --out OTUlist-extracted-reads </code>
+
+* The above command will generate a Fasta file containing the reads mapping to the OTUs in OTUID list file. The next step is to pick open reference OTUs using the QIIME script **pick_open_reference_otus.py**. You can use the template parameters file given here to instruct QIIME to use the PhytoRef Fasta, alignment and taxonomy files formatted according to the QIIME script.
+
+<code> pick_open_reference_otus.py -i OTUlist-extracted-reads/Chloroplast_OTU_IDs.txt.extracted.fasta -o Chlaroplast_clustering/ -p Chloroplast_clustering_params.txt -m sortmerna_sumaclust -s 0.1 -v --min_otu_size 1  </code>
   
 
