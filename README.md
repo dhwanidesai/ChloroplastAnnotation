@@ -30,7 +30,7 @@ In any case, the permissions for the script need to be changed to make it execut
 
 And then,
 
-<code> cp extract_sequences_for_OTU_ids.pl /home/<username>/bin </code>
+<code> cp extract_sequences_for_OTU_ids.pl /home/\<username\>/bin </code>
 
 The PhytoRef sequences Fasta, alignment and taxonomy files need to be copied to a databases folder (if existing). Wherever these files are stored, the path to these files will need to be specified while running the QIIME scripts.
 
