@@ -72,8 +72,9 @@ The PhytoRef sequences Fasta, alignment and taxonomy files need to be copied to 
 
 \*NOTE:- Sometimes, while using non-standard databases (databases other than the default Greengenes 16S) in QIIME, the tree generation step, which is called from within the OTU picking script, might fail. The reason for this is that there a is an alignment column filtering step prior to the tree building which might filter out a majority of the columns.
 To circumvent this, try using the following parameters for the **filter_alignment.py script** which is called as a part of the workflow from the **pick_open_reference_otus.py** script:
-    * --entropy_threshold 0.10
-    * --allowed_gap_frac 0.80
+    ** --entropy_threshold 0.10
+    
+    ** --allowed_gap_frac 0.80
   
 If you are using a parameters file for the **pick_open_reference_otus.py** you could add these parameteres in there like so:
 
