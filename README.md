@@ -68,4 +68,15 @@ The PhytoRef sequences Fasta, alignment and taxonomy files need to be copied to 
 
 <code> pick_open_reference_otus.py -i OTUlist-extracted-reads/Chloroplast_OTU_IDs.txt.extracted.fasta -o Chlaroplast_clustering/ -p Chloroplast_clustering_params.txt -m sortmerna_sumaclust -s 0.1 -v --min_otu_size 1  </code>
   
-* This should result in an OTU file (in the biom format) containing OTUs picked using the PhytoRes picked. From this point on, you could use the scripts and steps mentioned in the 16S SOP to generate OTU relative abundance plots for the differnet samples, Alpha and Beta diversity plots etc. 
+* This should result in an OTU file (in the biom format) containing OTUs picked using the PhytoRef database. From this point on, you could use the scripts and steps mentioned in the 16S SOP to generate OTU relative abundance plots for the differnet samples, Alpha and Beta diversity plots etc.
+
+\*NOTE:- Sometimes, while using non-standard databases (databases other than the default Greengenes 16S) in QIIME, the tree generation step, which is called from within the OTU picking script, might fail. The reason for this is that there a is an alignment column filtering step prior to the tree building which might filter out a majority of the columns.
+To circumvent this, try using the following parameters for the **filter_alignment.py script** which is called as a part of the workflow from the **pick_open_reference_otus.py** script:
+  * --entropy_threshold 0.10
+  * --allowed_gap_frac 0.80
+  
+If you are using a parameters file for the **pick_open_reference_otus.py** you could add these parameteres in there like so:
+
+filter_alignment:entropy_threshold 0.10
+filter_alignment:allowed_gap_frac 0.80
+
