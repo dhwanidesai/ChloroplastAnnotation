@@ -7,5 +7,6 @@ https://github.com/dhwanidesai/ChloroplastAnnotation/wiki/Chloroplast-amplicon-s
 
 We also describe protocol for chloroplast annotation using the current QIIME2 package, where, instead of OTUs, we identify actual denoised Sequence Variants with the Deblur method (https://github.com/biocore/deblur). This protocol is essentially based on the SOP described at the Microbiome Helper Wiki (Comeau et al., 2017) page:
 https://github.com/LangilleLab/microbiome_helper/wiki/Amplicon-SOP-v2
+
 More details here:
 https://github.com/dhwanidesai/ChloroplastAnnotation/wiki/Chloroplast-amplicon-sequence-annotation-using-Deblur-in-QIIME2
