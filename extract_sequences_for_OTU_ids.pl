@@ -64,6 +64,11 @@ chomp (@otus=<F>);
 
 open (M,$otumap);
 
+if ($otulist !~ /\//)
+{
+$otulist = "./".$otulist;
+}
+
 ($inpath,$in_fname) = $otulist =~ m|^(.*[/])([^/]+?)$|;
 
 print "Output tag to use ... $outpath/$in_fname <---- \n";

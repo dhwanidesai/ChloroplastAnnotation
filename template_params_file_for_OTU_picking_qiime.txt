@@ -1,8 +1,8 @@
 pick_otus:threads 24
 pick_otus:sortmerna_coverage 0.8
 pick_otus:similarity 0.98
-align_seqs:template_fp /home/<username>/databases/phytoref-plast-plus-cyano-sequences-mafft-alignment-070318.fasta
-assign_taxonomy:id_to_taxonomy_fp /home/<username>/databases/phytoref-plast-plus-cyano-taxonomy-070318.txt
-assign_taxonomy:reference_seqs_fp /home/<username>/databases/phytoref-plast-plus-cyano-sequences-070318.fasta
+align_seqs:template_fp /home/<username>/databases/phytoref-plast-plus-cyano-sequences-mafft-alignment-211118.fasta
+assign_taxonomy:id_to_taxonomy_fp /home/<username>/databases/phytoref-plast-plus-cyano-taxonomy-211118.txt
+assign_taxonomy:reference_seqs_fp /home/<username>/databases/phytoref-plast-plus-cyano-sequences-211118.fasta
 filter_alignment:entropy_threshold 0.10
 filter_alignment:allowed_gap_frac 0.80
